@@ -30,12 +30,18 @@
 	display: inline-block;
 	vertical-align: middle;
 	padding: 10px;
+	opacity: .75;
+}
+
+.header img:hover {
+	opacity: 1;
 }
 
 #user {
 	border-radius: 100%;
 	width: 30px;
 	position: relative;
+	opacity: 1;
 }
 
 .center {
@@ -75,10 +81,24 @@
 
 #search, #lucky {
 	position: absolute;
-	background: #e6e6e6;
+	background: #F2F2F2;
 	border: none;
 	padding: 10px;
 	font-weight: bold;
+	color: #757575;
+	border: 1px solid #F2F2F2;
+}
+
+#search:hover, #lucky:hover {
+	position: absolute;
+	background: #F2F2F2;
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	color: #000;
+	border: 1px solid #8D8D8D;
+	border-radius: 2px;
+
 }
 
 #search {
@@ -100,7 +120,7 @@
 
 .footer ul{
 	list-style-type: none;
-	display: inline-block;
+	display: inline;
 	vertical-align: middle;
 }
 
@@ -114,10 +134,12 @@
 #rightfoot {
 	position: fixed;
 	right: 20px;
-	bottom: 20px;
 }
 
-#rightfoot {
-	position: fixed;
-	right: 20px;
+.footer a, .header a{
+	text-decoration: none;
+}
+
+.footer a:hover, .header a:hover{
+	text-decoration: underline;
 }
